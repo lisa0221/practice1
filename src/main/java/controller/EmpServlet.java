@@ -360,6 +360,8 @@ public class EmpServlet extends HttpServlet {
         DeptService deptService = new DeptServiceImpl();
         List<DeptDO> deptDOs = deptService.getAll();
         req.setAttribute("deptDOs", deptDOs);
+
+        System.out.println("測試成功");
     }
 
 }
